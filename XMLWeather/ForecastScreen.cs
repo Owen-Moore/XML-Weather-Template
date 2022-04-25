@@ -26,6 +26,8 @@ namespace XMLWeather
             date2.Text = Form1.days[2].date;
             min2.Text = Form1.days[2].tempLow;
             max2.Text = Form1.days[2].tempHigh;
+
+            
         }
 
         private void label3_Click(object sender, EventArgs e)
