@@ -73,7 +73,8 @@
             // min1
             // 
             this.min1.BackColor = System.Drawing.Color.White;
-            this.min1.Location = new System.Drawing.Point(131, 168);
+            this.min1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.min1.Location = new System.Drawing.Point(131, 127);
             this.min1.Name = "min1";
             this.min1.Size = new System.Drawing.Size(22, 13);
             this.min1.TabIndex = 48;
@@ -83,7 +84,7 @@
             this.minLabel.AutoSize = true;
             this.minLabel.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.minLabel.ForeColor = System.Drawing.Color.White;
-            this.minLabel.Location = new System.Drawing.Point(24, 166);
+            this.minLabel.Location = new System.Drawing.Point(15, 125);
             this.minLabel.Name = "minLabel";
             this.minLabel.Size = new System.Drawing.Size(98, 15);
             this.minLabel.TabIndex = 46;
@@ -92,8 +93,8 @@
             // max1
             // 
             this.max1.BackColor = System.Drawing.Color.White;
-            this.max1.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.max1.Location = new System.Drawing.Point(131, 136);
+            this.max1.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.max1.Location = new System.Drawing.Point(131, 101);
             this.max1.Name = "max1";
             this.max1.Size = new System.Drawing.Size(22, 13);
             this.max1.TabIndex = 45;
@@ -103,7 +104,7 @@
             this.maxLabel.AutoSize = true;
             this.maxLabel.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maxLabel.ForeColor = System.Drawing.Color.White;
-            this.maxLabel.Location = new System.Drawing.Point(24, 136);
+            this.maxLabel.Location = new System.Drawing.Point(15, 99);
             this.maxLabel.Name = "maxLabel";
             this.maxLabel.Size = new System.Drawing.Size(98, 15);
             this.maxLabel.TabIndex = 44;
@@ -123,32 +124,32 @@
             // date1
             // 
             this.date1.AutoSize = true;
-            this.date1.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.date1.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date1.ForeColor = System.Drawing.Color.White;
-            this.date1.Location = new System.Drawing.Point(24, 110);
+            this.date1.Location = new System.Drawing.Point(15, 74);
             this.date1.Name = "date1";
-            this.date1.Size = new System.Drawing.Size(31, 15);
+            this.date1.Size = new System.Drawing.Size(36, 18);
             this.date1.TabIndex = 64;
             this.date1.Text = "Date";
             // 
             // date2
             // 
             this.date2.AutoSize = true;
-            this.date2.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.date2.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date2.ForeColor = System.Drawing.Color.White;
-            this.date2.Location = new System.Drawing.Point(24, 197);
+            this.date2.Location = new System.Drawing.Point(15, 180);
             this.date2.Name = "date2";
-            this.date2.Size = new System.Drawing.Size(31, 15);
+            this.date2.Size = new System.Drawing.Size(36, 18);
             this.date2.TabIndex = 69;
             this.date2.Text = "Date";
             // 
             // min2
             // 
             this.min2.BackColor = System.Drawing.Color.White;
-            this.min2.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.min2.Location = new System.Drawing.Point(131, 250);
+            this.min2.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.min2.Location = new System.Drawing.Point(131, 230);
             this.min2.Name = "min2";
-            this.min2.Size = new System.Drawing.Size(22, 13);
+            this.min2.Size = new System.Drawing.Size(22, 15);
             this.min2.TabIndex = 68;
             // 
             // label4
@@ -156,7 +157,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(24, 250);
+            this.label4.Location = new System.Drawing.Point(15, 230);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(98, 15);
             this.label4.TabIndex = 67;
@@ -165,8 +166,8 @@
             // max2
             // 
             this.max2.BackColor = System.Drawing.Color.White;
-            this.max2.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.max2.Location = new System.Drawing.Point(131, 220);
+            this.max2.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.max2.Location = new System.Drawing.Point(131, 204);
             this.max2.Name = "max2";
             this.max2.Size = new System.Drawing.Size(22, 13);
             this.max2.TabIndex = 66;
@@ -176,7 +177,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(24, 220);
+            this.label7.Location = new System.Drawing.Point(15, 204);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(98, 15);
             this.label7.TabIndex = 65;
@@ -184,7 +185,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(159, 110);
+            this.pictureBox1.Location = new System.Drawing.Point(159, 99);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(85, 71);
             this.pictureBox1.TabIndex = 70;
@@ -192,7 +193,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(159, 204);
+            this.pictureBox2.Location = new System.Drawing.Point(159, 184);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(85, 61);
             this.pictureBox2.TabIndex = 71;

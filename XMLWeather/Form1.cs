@@ -84,12 +84,39 @@ namespace XMLWeather
             days[0].precipitation = reader.GetAttribute("mode");
 
             reader.ReadToFollowing("weather");
-            days[0].condition = reader.GetAttribute("value");
+            days[0].condition = Convert.ToInt32(reader.GetAttribute("number"));
 
             reader.ReadToFollowing("visibility");
             days[0].visibility = reader.GetAttribute("value");
-            
 
+
+
+           
+            if (days[0].condition >= 200 && days[0].condition < 230)
+            {
+                
+                days[0].image = Properties.Resources.thunderstorm;
+            }
+            if (days[0].condition >= 231 && days[0].condition < 532)
+            {
+
+                days[0].image = Properties.Resources.rain;
+            }
+            if (days[0].condition >= 532 && days[0].condition < 622)
+            {
+
+                days[0].image = Properties.Resources.snow;
+            }
+            if (days[0].condition >= 622 && days[0].condition < 801)
+            {
+
+                days[0].image = Properties.Resources.sun;
+            }
+            if (days[0].condition >= 801 && days[0].condition < 805)
+            {
+
+                days[0].image = Properties.Resources.clouds;
+            }
         }
 
 

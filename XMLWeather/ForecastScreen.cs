@@ -27,6 +27,8 @@ namespace XMLWeather
             min2.Text = Form1.days[2].tempLow;
             max2.Text = Form1.days[2].tempHigh;
 
+
+
             
         }
 

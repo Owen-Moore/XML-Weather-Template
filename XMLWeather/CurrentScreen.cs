@@ -6,6 +6,8 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Net;
+using System.Xml;
 
 namespace XMLWeather
 {
@@ -24,6 +26,8 @@ namespace XMLWeather
             tempLabel.Text = Form1.days[0].currentTemp;
             minOutput.Text = Form1.days[0].tempLow;
             maxOutput.Text = Form1.days[0].tempHigh;
+
+            pictureBox1.Image = Form1.days[0].image;
         }
 
         private void forecastLabel_Click(object sender, EventArgs e)
@@ -34,5 +38,7 @@ namespace XMLWeather
             ForecastScreen fs = new ForecastScreen();
             f.Controls.Add(fs);
         }
+
+        
     }
 }
