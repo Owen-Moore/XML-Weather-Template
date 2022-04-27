@@ -35,13 +35,16 @@ namespace XMLWeather
 
             while (reader.Read())
             {
-                //TODO: create a day object
+                //create a day object
                 Day newDay = new Day();
                 
                 
-                //TODO: fill day object with required data
+                //fill day object with required data
                 reader.ReadToFollowing("time");
                 newDay.date = reader.GetAttribute("day");
+
+                reader.ReadToFollowing("symbol");
+                newDay.condition = Convert.ToInt32(reader.GetAttribute("number"));
 
                 reader.ReadToFollowing("precipitation");
                 newDay.precipitation = reader.GetAttribute("probability");
@@ -58,7 +61,9 @@ namespace XMLWeather
                 newDay.tempHigh = reader.GetAttribute("max");
 
                 
-                //TODO: if day object not null add to the days list
+
+                
+                // if day object not null add to the days list
                 if (newDay.date != null)
                 {
                     days.Add(newDay);
@@ -73,7 +78,7 @@ namespace XMLWeather
             // current info is not included in forecast file so we need to use this file to get it
             XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/weather?q=Stratford,CA&mode=xml&units=metric&appid=3f2e224b815c0ed45524322e145149f0");
 
-            //TODO: find the city and current temperature and add to appropriate item in days list
+           // find the city and current temperature and add to appropriate item in days list
             reader.ReadToFollowing("city");
             days[0].location = reader.GetAttribute("name");
 
@@ -90,7 +95,7 @@ namespace XMLWeather
             days[0].visibility = reader.GetAttribute("value");
 
 
-
+            // figures out what icon to show depending on the weather
            
             if (days[0].condition >= 200 && days[0].condition < 230)
             {
@@ -116,6 +121,60 @@ namespace XMLWeather
             {
 
                 days[0].image = Properties.Resources.clouds;
+            }
+
+
+            if (days[1].condition >= 200 && days[1].condition < 230)
+            {
+
+                days[1].image = Properties.Resources.thunderstorm;
+            }
+            if (days[1].condition >= 231 && days[1].condition < 532)
+            {
+
+                days[1].image = Properties.Resources.rain;
+            }
+            if (days[1].condition >= 532 && days[1].condition < 622)
+            {
+
+                days[1].image = Properties.Resources.snow;
+            }
+            if (days[1].condition >= 622 && days[1].condition < 801)
+            {
+
+                days[1].image = Properties.Resources.sun;
+            }
+            if (days[1].condition >= 801 && days[1].condition < 805)
+            {
+
+                days[1].image = Properties.Resources.clouds;
+            }
+
+
+            if (days[2].condition >= 200 && days[2].condition < 230)
+            {
+
+                days[2].image = Properties.Resources.thunderstorm;
+            }
+            if (days[2].condition >= 231 && days[2].condition < 532)
+            {
+
+                days[2].image = Properties.Resources.rain;
+            }
+            if (days[2].condition >= 532 && days[2].condition < 622)
+            {
+
+                days[2].image = Properties.Resources.snow;
+            }
+            if (days[2].condition >= 622 && days[2].condition < 801)
+            {
+
+                days[2].image = Properties.Resources.sun;
+            }
+            if (days[2].condition >= 801 && days[2].condition < 805)
+            {
+
+                days[2].image = Properties.Resources.clouds;
             }
         }
 

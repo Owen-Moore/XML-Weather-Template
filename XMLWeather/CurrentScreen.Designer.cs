@@ -57,7 +57,7 @@
             // 
             this.maxOutput.BackColor = System.Drawing.Color.White;
             this.maxOutput.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maxOutput.Location = new System.Drawing.Point(111, 298);
+            this.maxOutput.Location = new System.Drawing.Point(91, 298);
             this.maxOutput.Name = "maxOutput";
             this.maxOutput.Size = new System.Drawing.Size(113, 13);
             this.maxOutput.TabIndex = 32;
@@ -77,7 +77,7 @@
             // 
             this.minOutput.BackColor = System.Drawing.Color.White;
             this.minOutput.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.minOutput.Location = new System.Drawing.Point(111, 271);
+            this.minOutput.Location = new System.Drawing.Point(91, 271);
             this.minOutput.Name = "minOutput";
             this.minOutput.Size = new System.Drawing.Size(113, 13);
             this.minOutput.TabIndex = 30;
@@ -87,7 +87,7 @@
             this.minLabel.AutoSize = true;
             this.minLabel.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.minLabel.ForeColor = System.Drawing.Color.White;
-            this.minLabel.Location = new System.Drawing.Point(21, 271);
+            this.minLabel.Location = new System.Drawing.Point(26, 271);
             this.minLabel.Name = "minLabel";
             this.minLabel.Size = new System.Drawing.Size(25, 15);
             this.minLabel.TabIndex = 29;
